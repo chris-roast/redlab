@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fira_Sans } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import NavBar from "@/components/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const firaSans = Fira_Sans({
+  variable: "--font-fira-sans",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Redlab QE",
-  description: "Specialising in Software Quality Engineering Processes & Practices",
+  description: "Software Quality Engineering and Testing",
 };
 
 export default function RootLayout({
@@ -26,21 +21,21 @@ export default function RootLayout({
 }>) { 
 
   let header = (
-    <header>
+    <header className="bg-red-600 h-16">
       <NavBar />
     </header>
   );
 
   let footer = (
-    <footer>
-      Redlab Consulting LTD 
+    <footer className="text-end">
+      Redlab Consulting LTD &copy;
     </footer>
   );
 
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${firaSans.variable} antialiased`}
       >
         {header}
         {children}
