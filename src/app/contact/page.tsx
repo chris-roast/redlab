@@ -1,8 +1,8 @@
-export default function Home() {
+export default function About() {
   return (
     <main>
       <div>
-        The Main Page
+        The Contact Page
       </div>
     </main>
   );

@@ -1,6 +1,6 @@
 import { PostMetadataType } from "@/utils/postUtils";
 import Link from "next/link";
-import { FC, JSX } from "react";
+import { FC } from "react";
 
 export interface PostMetadataProps {
     postMetadata: PostMetadataType
