@@ -6,7 +6,7 @@ import NavBar from "@/components/NavBar";
 const firaSans = Fira_Sans({
   variable: "--font-fira-sans",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["400","800",]
 });
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${firaSans.variable} antialiased`}
+        className={`${firaSans.className} antialiased`}
       >
         {header}
         {children}
