@@ -2,11 +2,13 @@ import React from 'react';
 
 const NavBar: React.FC = () => {
     return (
-        <nav className='h-full mr-4'>
-            <ul className='flex gap-8 h-full w-full items-center justify-end font-bold'>
+        <nav className='flex h-full justify-between'>
+            <ul className='flex gap-8 h-full items-center font-bold ml-2'>
                 <li>
                     <a href="/" className='text-nowrap'>RedlabQE</a>
                 </li>
+            </ul>
+            <ul className='flex gap-8 h-full items-center font-bold mr-4'>
                 <li>
                     <a href="/blog">Blog</a>
                 </li>
