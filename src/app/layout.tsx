@@ -28,7 +28,7 @@ export default function RootLayout({
 
   let footer = (
     <footer className="text-end">
-      Redlab Consulting LTD &copy;
+      Redlab Consulting ltd &copy;
     </footer>
   );
 
