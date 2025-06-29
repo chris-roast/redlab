@@ -6,7 +6,7 @@ import NavBar from "@/components/NavBar";
 const firaSans = Fira_Sans({
   variable: "--font-fira-sans",
   subsets: ["latin"],
-  weight: ["400","800",]
+  weight: ["400","700", "800",]
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) { 
 
   let header = (
-    <header className="bg-red-600 h-16">
+    <header className="bg-red-700 h-16">
       <NavBar />
     </header>
   );

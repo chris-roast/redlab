@@ -8,7 +8,7 @@ const NavBar: React.FC = () => {
                     <a href="/" className='text-nowrap text-5xl'>RedlabQE</a>
                 </li>
             </ul>
-            <ul className='flex gap-8 h-full items-center font-bold mr-4'>
+            <ul className='flex gap-8 h-full items-center mr-4'>
                 <li>
                     <a href="/blog">Blog</a>
                 </li>
