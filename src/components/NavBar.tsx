@@ -1,4 +1,5 @@
 import React from 'react';
+import CharmMenuHamburger from './CharmMenuHamburger';
 
 const NavBar: React.FC = () => {
     return (
@@ -8,7 +9,8 @@ const NavBar: React.FC = () => {
                     <a href="/" className='text-nowrap text-5xl'>RedlabQE</a>
                 </li>
             </ul>
-            <ul className='flex gap-8 h-full items-center mr-4'>
+            <CharmMenuHamburger className='md:hidden h-full mr-4' />
+            <ul className='hidden md:flex gap-8 h-full items-center mr-4'>
                 <li>
                     <a href="/blog">Blog</a>
                 </li>
